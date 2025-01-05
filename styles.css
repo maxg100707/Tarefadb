@@ -1,0 +1,140 @@
+/* Estilo básico para a aplicação */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.auth-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.auth-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.auth-button:hover {
+    background-color: #45a049;
+}
+
+.google {
+    background-color: #db4437;
+}
+
+.google:hover {
+    background-color: #c1351d;
+}
+
+.or {
+    margin: 20px 0;
+    position: relative;
+}
+
+.or span {
+    background: #fff;
+    padding: 0 10px;
+    color: #888;
+    font-size: 14px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.email-login {
+    display: none;
+}
+
+.register {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.register span {
+    color: #4CAF50;
+    cursor: pointer;
+}
+
+.task-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#task-list li {
+    background-color: #f9f9f9;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#task-list button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#task-list button:hover {
+    background-color: #c0392b;
+}
+
+.logout {
+    background-color: #e74c3c;
+    margin-top: 20px;
+}
+
+.logout:hover {
+    background-color: #c0392b;
+}

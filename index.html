@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js" defer></script>
+</head>
+<body>
+    <div id="auth-container" class="auth-container">
+        <h2>Bem-vindo</h2>
+        <p>Faça login para acessar a lista de tarefas</p>
+
+        <!-- Login com Google -->
+        <button id="login-google-button" class="auth-button google">Login com Google</button>
+
+        <div class="or">
+            <span>ou</span>
+        </div>
+
+        <!-- Login com E-mail e Senha -->
+        <div class="email-login">
+            <input type="email" id="email-input" placeholder="E-mail" class="input-field">
+            <input type="password" id="password-input" placeholder="Senha" class="input-field">
+            <button id="login-email-button" class="auth-button">Login com E-mail</button>
+        </div>
+
+        <div class="register">
+            <p>Ainda não tem uma conta? <span id="register-link">Registre-se</span></p>
+        </div>
+    </div>
+
+    <div id="task-container" class="task-container" style="display: none;">
+        <h1>Lista de Tarefas</h1>
+        <input type="text" id="task-input" placeholder="Digite uma tarefa..." class="input-field">
+        <button id="add-task-button" class="auth-button">Adicionar Tarefa</button>
+        <ul id="task-list"></ul>
+        <button id="logout-button" class="auth-button logout">Sair</button>
+    </div>
+</body>
+</html>
